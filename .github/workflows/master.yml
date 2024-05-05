@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: .next
+          path: out
 
   deploy:
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
         with:
 #          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #          branch: gh-pages
-          folder: .next
+          folder: out
