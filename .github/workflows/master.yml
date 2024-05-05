@@ -1,53 +1,52 @@
 name: Build and Deploy Next.js App to GitHub Pages
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+   push:
+      branches:
+         - master
+   pull_request:
+      branches:
+         - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+   build:
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      steps:
+         - name: Checkout repository
+           uses: actions/checkout@v4
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+         - name: Setup Node.js environment
+           uses: actions/setup-node@v4
+           with:
+              node-version: "20"
 
-      - name: Install dependencies
-        run: npm install
+         - name: Install dependencies
+           run: npm install
 
-      - name: Build Next.js app
-        run: npm run build
+         - name: Build Next.js app
+           run: npm run build
 
-      - name: Archive production build
-        uses: actions/upload-artifact@v2
-        with:
-          name: build
-          path: out
+         - name: Archive production build
+           uses: actions/upload-artifact@v4
+           with:
+              name: build
+              path: out
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+   deploy:
+      runs-on: ubuntu-latest
+      needs: build
+      steps:
+         - name: Checkout repository
+           uses: actions/checkout@v2
 
-      - name: Download production build
-        uses: actions/download-artifact@v2
-        with:
-          name: build
+         - name: Download production build
+           uses: actions/download-artifact@v2
+           with:
+              name: build
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-#          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          branch: gh-pages
-          folder: out
+         - name: Deploy to GitHub Pages
+           uses: JamesIves/github-pages-deploy-action@v4
+           with:
+              branch: gh-pages
+              folder: out
