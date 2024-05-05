@@ -3,10 +3,7 @@ name: Build and Deploy Next.js App to GitHub Pages
 on:
    push:
       branches:
-         - master
-   pull_request:
-      branches:
-         - master
+         - main
 
 jobs:
    build:
@@ -14,7 +11,7 @@ jobs:
 
       steps:
          - name: Checkout repository
-           uses: actions/checkout@v4
+           uses: actions/checkout@v3
 
          - name: Setup Node.js environment
            uses: actions/setup-node@v4
@@ -27,8 +24,8 @@ jobs:
          - name: Build Next.js app
            run: npm run build
 
-         - name: Archive production build
-           uses: actions/upload-artifact@v4
+         - name: Upload production build artifact
+           uses: actions/upload-artifact@v3
            with:
               name: build
               path: out
@@ -38,10 +35,10 @@ jobs:
       needs: build
       steps:
          - name: Checkout repository
-           uses: actions/checkout@v2
+           uses: actions/checkout@v3
 
-         - name: Download production build
-           uses: actions/download-artifact@v2
+         - name: Download production build artifact
+           uses: actions/download-artifact@v3
            with:
               name: build
 
