@@ -2,6 +2,7 @@ import BackButton from '@/components/BackButton'
 import Header from '@/components/Header'
 import Wrapper from '@/components/Wrapper'
 import { getPostById, getAllPosts } from '@/lib/api'
+import moment from 'moment'
 
 export default async function Post({
    params: { id },
@@ -23,7 +24,11 @@ export default async function Post({
                <div dangerouslySetInnerHTML={{ __html: html }} className='text-white min-w-full p-4 prose prose-zinc prose-md prose-video:mx-auto prose-video:w-full prose-video:my-2 prose-code:text-white prose-video:min-w-full prose-code:bg-[#27272a] prose-headings:text-yellow-300 prose-a:text-yellow-500 prose-a:font-bold'></div>
             </div>
 
-            <BackButton />
+            <div className='flex justify-between'>
+               <BackButton />
+               
+               <time className='text-white mx-4'>{moment(date).format('YYYY/MM/DD')}</time>
+            </div>
          </Wrapper>
 
       </main>

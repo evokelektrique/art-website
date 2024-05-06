@@ -1,5 +1,5 @@
 import "./app.scss";
-import headerBackground from "@/../public/header-background.png";
+import headerBackground from "@/../public/header-background.webp";
 
 export const metadata = {
    title: "Visual ~ Harmonies",
