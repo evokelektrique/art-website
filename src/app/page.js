@@ -21,7 +21,7 @@ export default async function Home() {
             <div>
                <Header title={'Visual ~ Harmonies'}>
                   <h2 className="text-xl lg:text-2xl text-transparent font-light text-white">
-                     This is a website where <b className="font-bold text-yellow-100">art</b> and <b className="font-bold text-yellow-100">audio</b>  merge
+                     where <b className="font-bold text-yellow-100">art</b> and <b className="font-bold text-yellow-100">audio</b>  merge
                   </h2>
                </Header>
 
