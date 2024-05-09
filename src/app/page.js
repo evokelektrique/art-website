@@ -19,11 +19,7 @@ export default async function Home() {
          {/* Container */}
          <Wrapper>
             <div>
-               <Header title={'Visual ~ Harmonies'}>
-                  <h2 className="text-xl lg:text-2xl text-transparent font-light text-white">
-                     where <b className="font-bold text-yellow-100">art</b> and <b className="font-bold text-yellow-100">audio</b>  merge
-                  </h2>
-               </Header>
+               <Header title={'Visual ~ Harmonies'}></Header>
 
                {/* Latest posts */}
                <ul className="p-6 flex flex-col gap-4">
