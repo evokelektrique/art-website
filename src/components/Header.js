@@ -6,7 +6,7 @@ export default function Header({ title, description, children }) {
 
                 {/* Title */}
                 {title && (
-                    <h1 className="text-2xl md:text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-400 mb-6">
+                    <h1 className="text-2xl md:text-4xl lg:text-6xl !leading-normal font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-400">
                         {title}
                     </h1>
                 )}
