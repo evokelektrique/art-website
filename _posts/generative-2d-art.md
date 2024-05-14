@@ -5,6 +5,10 @@ video: https://github.com/evokelektrique/ART-STUFF/raw/master/TD/FloorPlan/Expor
 # video_poster: 
 ---
 
+## Details
+
+Repository: <https://github.com/evokelektrique/ART-STUFF/tree/master/TD/FloorPlan>
+
 ## It began from a floor plan: generative art design
 
 ![Floor plan export](https://raw.githubusercontent.com/evokelektrique/ART-STUFF/master/TD/FloorPlan/Exports/TDImageOut.0.png "Floor plan export")
