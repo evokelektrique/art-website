@@ -4,7 +4,7 @@ Welcome to my personal art website!
 
 ## Overview
 
-This website showcases my artwork, including generative art, audio reactive, and digital art. 
+This website showcases my artwork, including generative art, audio reactive, and digital art.
 
 ## Getting Started
 
