@@ -21,7 +21,7 @@ export default async function Post({
                   <video controls className='w-full' src={video} poster={video_poster}></video>
                )}
 
-               <div dangerouslySetInnerHTML={{ __html: html }} className='text-white min-w-full p-4 prose prose-zinc prose-md prose-video:mx-auto prose-video:w-full prose-video:my-2 prose-code:text-white prose-video:min-w-full prose-code:bg-[#27272a] prose-headings:text-yellow-300 prose-a:text-yellow-500 prose-a:font-bold'></div>
+               <div dangerouslySetInnerHTML={{ __html: html }} className='text-white min-w-full p-4 prose prose-zinc prose-md prose-video:mx-auto prose-video:w-full prose-video:my-2 prose-code:text-white prose-video:min-w-full prose-code:bg-[#27272a] prose-headings:text-yellow-300 prose-a:text-yellow-500 prose-a:font-bold prose-a:break-words'></div>
             </div>
 
             <div className='flex justify-between'>
