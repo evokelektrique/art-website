@@ -7,4 +7,6 @@ video: https://github.com/evokelektrique/ART-STUFF/raw/master/TD/GridWaves/Expor
 
 ## Details
 
+Music:  Carbon Based Lifeforms - Seeker
+
 Repository: <https://github.com/evokelektrique/ART-STUFF/tree/master/TD/GridWaves>
