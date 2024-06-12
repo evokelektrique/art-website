@@ -9,6 +9,8 @@ video_poster: https://github.com/evokelektrique/ART-STUFF/blob/master/TD/AudioRe
 
 Repository: <https://github.com/evokelektrique/ART-STUFF/tree/master/TD/AudioReactiveGradientRectangle>
 
+Music: SUICIDEBOY - drugshoesmoneyetc_slowed_to_x08_speed_with_pitch
+
 !['Colored gradient with grain noise'](https://github.com/evokelektrique/ART-STUFF/blob/master/TD/AudioReactiveGradientRectangle/Exports/AudioReactiveGradientRectangle.1.png?raw=true)
 
 ## Variations
