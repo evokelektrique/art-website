@@ -5,7 +5,7 @@ import { getAllPosts } from "@/lib/api";
 import Link from "next/link";
 
 export default async function Home() {
-   const posts = (await getAllPosts()).slice(0, 10).sort((a, b) => {
+   const posts = (await getAllPosts()).slice(0, 20).sort((a, b) => {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
 
