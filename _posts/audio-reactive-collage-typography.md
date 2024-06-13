@@ -9,7 +9,7 @@ video_poster: https://github.com/evokelektrique/ART-STUFF/blob/master/TD/Typogra
 
 Music: <https://soundcloud.com/elusin13/synfuels-prelude?in=elusin13/sets/synfuels>
 
-Repository: <https://github.com/evokelektrique/ART-STUFF/tree/master/TD/AudioReactiveGradientRectangle>
+Repository: <https://github.com/evokelektrique/ART-STUFF/tree/master/TD/Typography>
 
 ## Variations
 
